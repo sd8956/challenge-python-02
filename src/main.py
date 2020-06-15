@@ -31,9 +31,8 @@ def generate_password():
     secure_password = list(password)
     random.shuffle(secure_password)
 
-    return secure_password
+    return ''.join(secure_password)
     
-
 
 def validate(password):
 
