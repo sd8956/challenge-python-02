@@ -26,8 +26,12 @@ def generate_password():
         
         if len(password) == base:
             break
-        
-    return password
+    
+
+    secure_password = list(password)
+    random.shuffle(secure_password)
+
+    return secure_password
     
 
 
